@@ -1,5 +1,6 @@
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../node_modules/bootstrap/scss/functions";
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 // 2. Include any default variable overrides here
 $link-decoration: none;
@@ -13,7 +14,7 @@ $warning: #ff5e37;
 
 // 4. Include any default map overrides here
 $custom-colors: (
-	"btnWhite": #eef1f6,
+	"altWhite": #eef1f6,
 	"Morkegron": #004032,
 	"mint": #b0ffc5,
 	"gul": #ffd300,
@@ -21,6 +22,11 @@ $custom-colors: (
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
+$box-shadow-sm: 5px 5px 5px 0px rgba($black, .025);
+
 @import "bootstrapComponents";
 
 // 5. Du kan lave styling her...
+body{
+	font-family: "Roboto Condensed";
+}
