@@ -30,3 +30,14 @@ $box-shadow-sm: 5px 5px 5px 0px rgba($black, .025);
 body{
 	font-family: "Roboto Condensed";
 }
+
+.instrument{
+	font-family: "Instrument Serif";
+}
+
+.transparentIntro{
+	border-radius: 25px;
+	background: rgba(238, 241, 246, 0.25);
+	backdrop-filter: blur(7.5px);
+	color: red;
+}
