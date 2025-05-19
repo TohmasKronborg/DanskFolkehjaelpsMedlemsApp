@@ -4,7 +4,7 @@ const ctx = canvas.getContext("2d");
 // Resize canvas to full window
 function resizeCanvas() {
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight-100;
+    canvas.height = window.innerHeight-350;
 }
 window.addEventListener("resize", resizeCanvas);
 resizeCanvas();
@@ -32,7 +32,7 @@ class Particle {
         this.x = Math.random() * canvas.width;
         this.y = -50 - Math.random() * 200;
         this.size = 0.3 + Math.random() * 0.7;
-        this.speed = 0.5 + Math.random() * 1;
+        this.speed = 0.5 + Math.random();
         this.angle = Math.random() * Math.PI / 4 - Math.PI / 8; // Slight angle left or right
         this.rotation = Math.random() * Math.PI * 2;
         this.rotationSpeed = Math.random() * 0.01 - 0.005;
