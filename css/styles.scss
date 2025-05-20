@@ -19,6 +19,7 @@ $custom-colors: (
 	"mint": #b0ffc5,
 	"gul": #ffd300,
 	"darkRed": #c40000,
+	"gray": #686868,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
