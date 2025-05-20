@@ -39,7 +39,7 @@ require "settings/init.php";
 </canvas>
 
 <main class="p-5 transparentIntro">
-    <p class="text-center z-1 instrument te">
+    <p class="text-center z-1 instrument">
         Som medlem af Dansk Folkehjælp gør du en forskel for mennesker i nød – du støtter frivillige indsatser som julehjælp, social støtte og nødhjælp både i Danmark og ude i verden, og er med til at skabe håb, fællesskab og tryghed der, hvor livet gør ondt.
     </p>
 </main>
