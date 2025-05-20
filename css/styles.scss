@@ -18,6 +18,7 @@ $custom-colors: (
 	"Morkegron": #004032,
 	"mint": #b0ffc5,
 	"gul": #ffd300,
+	"darkRed": #c40000,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
