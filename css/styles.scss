@@ -19,7 +19,7 @@ $custom-colors: (
 	"mint": #b0ffc5,
 	"gul": #ffd300,
 	"darkRed": #c40000,
-	"gray": #686868,
+	"beige": #F6EEDE,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -41,4 +41,18 @@ body{
 	border-radius: 15px;
 	background: rgba(238, 241, 246, 0.25);
 	backdrop-filter: blur(7.5px);
+}
+
+// SM breakpoint
+@media screen and (min-width: 576px){
+ .w-sm-50{
+	 width: 50% !important;
+ }
+}
+
+// MD breakpoint
+@media screen and (min-width: 768px){
+	.w-md-50{
+		width: 50% !important;
+	}
 }
