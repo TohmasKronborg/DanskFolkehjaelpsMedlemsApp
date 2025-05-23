@@ -1,10 +1,11 @@
 const canvas = document.getElementById("flakes");
 const ctx = canvas.getContext("2d");
+const contentHeight = document.getElementById("flakesMain")
 
 // Resize canvas to full window
 function resizeCanvas() {
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight-350;
+    canvas.height = contentHeight.offsetHeight+250;
 }
 window.addEventListener("resize", resizeCanvas);
 resizeCanvas();
