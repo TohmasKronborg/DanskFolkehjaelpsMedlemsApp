@@ -52,7 +52,7 @@ require "settings/init.php";
 
 <div class="container-fluid d-flex justify-content-center">
     <div class="row d-flex flex-column">
-        <div class="col-12">
+        <div class="col-12 d-flex justify-content-center">
             <p class="text-gray">100 point = 1 billet</p>
         </div>
         <div class="col-12 d-flex justify-content-center">
@@ -72,7 +72,7 @@ require "settings/init.php";
             <p class="h4 fw-bolder">Køb flere billetter</p>
         </div>
         <div class="col-12 d-flex justify-content-center">
-            <input class="form-control border-gray" type="text" placeholder="Antal" aria-label="antal billetter">
+            <input class="form-control border-gray" type="number" placeholder="Antal"  aria-label="antal billetter" id="billetInput" step="1" min="0" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
         </div>
         <div class="col-12 d-flex justify-content-center mt-2">
             <div class="d-grid gap-2 w-100">
@@ -81,9 +81,8 @@ require "settings/init.php";
                 </button>
             </div>
         </div>
-        <div class="col-12 d-flex justify-content-center mt-3">
-            <p class="text-gray h4">Pris: </p>
-            <p class="text-gray h4">22</p> <!-- Igen, når databasen er sat op, så kan vi lave noget php her der udregner prisen. -->
+        <p class="col-12 d-flex justify-content-center mt-3">
+            <p class="text-gray h4">Pris: <span class="text-gray h4" id="prisResult">0</span></p> <!-- Igen, når databasen er sat op, så kan vi lave noget php her der udregner prisen. -->
         </div>
     </div>
 </div>
@@ -112,6 +111,18 @@ require "settings/init.php";
         document.getElementById("countdown").innerHTML =
             `${days}d ${hours}h ${minutes}m ${seconds}s`;
     }, 1000);
+</script>
+
+<script>
+    const input = document.getElementById('billetInput');
+    const resultDisplay = document.getElementById('prisResult');
+    const multiplier = 100;
+
+    input.addEventListener('input', () => {
+        const value = parseFloat(input.value);
+        const multiplied = isNaN(value) ? 0 : value * multiplier;
+        resultDisplay.textContent = Math.floor(multiplied);
+    });
 </script>
 
 </body>
