@@ -87,7 +87,7 @@ require "settings/init.php";
 
             <!-- Ul list -->
             <!-- Fjern ordered list og lav det til ikoner i stedet for -->
-            <div class="col-12 col-lg-6 pe-5 ps-5">
+            <div class="col-12 col-lg-6 pe-5 ps-5 d-flex flex-column justify-content-center">
                 <h2 class="text-secondary text-center instrument">Som Medlem er du med til ...</h2>
                 <ul class="fs-4">
                     <li>
