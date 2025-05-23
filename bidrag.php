@@ -5,6 +5,7 @@
 
 require "settings/init.php";
 
+
 // Connect to database
 $host = 'mariadb';
 $user = 'user';
@@ -13,24 +14,23 @@ $db = 'dkfma';
 
 $conn = new mysqli($host, $user, $pass, $db);
 
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Set donation goal
+// Donations mål
 $donationGoal = 2500000;
 
 // Gather form data with fallbacks
 $donorNavn = trim($_POST['donorNavn'] ?? "");
 $donorType = $_POST['donorType'] ?? null;
 
-// If name is blank, set to Anonym
+// Hvis donorNavn er blankt anlæg det som være en Anonym
 if ($donorNavn === "") {
     $donorNavn = "Anonym";
 }
 
-// Determine amount
+// Mængde af penge doneret
 $donorAmount = null;
 if (!empty($_POST['customAmount']) && is_numeric($_POST['customAmount'])) {
     $donorAmount = $_POST['customAmount'];
@@ -40,7 +40,7 @@ if (!empty($_POST['customAmount']) && is_numeric($_POST['customAmount'])) {
 
 $responseMessage = "";
 
-// Only insert if all fields are present and it's a POST request
+// POST'er kun når alle felter er udfyldt
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $donorNavn !== null && $donorType !== null && $donorAmount !== null) {
     $stmt = $conn->prepare("INSERT INTO donations (donorNavn, donorAmount, donorType) VALUES (?, ?, ?)");
     $stmt->bind_param("sii", $donorNavn, $donorAmount, $donorType);
@@ -55,18 +55,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $donorNavn !== null && $donorType !
     $stmt->close();
 }
 
-// Fetch total donation amount
+// Hent alle donationer
 $result = $conn->query("SELECT SUM(donorAmount) AS total FROM donations");
 $totalDonation = 0;
 if ($row = $result->fetch_assoc()) {
     $totalDonation = $row['total'] ?? 0;
 }
 
-// Fetch latest donations
+// Hent de seneste doneringer
 $latestDonationsResult = $conn->query("SELECT donorNavn, donorAmount FROM donations ORDER BY donorId DESC LIMIT 5");
 $latestDonations = [];
 while ($donation = $latestDonationsResult->fetch_assoc()) {
     $latestDonations[] = $donation;
+}
+
+$progressProcent = round(($totalDonation / $donationGoal) * 100);
+if ($progressProcent >= 100) {
+    $progressProcent = 100;
 }
 
 $conn->close();
@@ -90,19 +95,20 @@ $conn->close();
 <body class="bg-secondaryToWhiteGradient">
 
 <!-- Include Navbar -->
+<?php include "includes/navbar.php"; ?>
 
 <header class="w-75 w-md-50 text-center m-auto text-white mt-5">
     <h1>
-        Hjælp børn til en bedre jul!
+        Dansk Julehjælps jule indsamling
     </h1>
-    <p class="instrument">"Børn buede have en glad jul"</p>
+    <p class="instrument">"Børn burde have en god jul"</p>
 
     <!-- Optjente penge -->
-    <span class="h1"><?php echo number_format($totalDonation, 0, ',', '.'); ?> DKK</span>
+    <p class="fs-1 fw-bolder text-gul"><?php echo number_format($totalDonation, 0, ',', '.'); ?> DKK</p>
 
     <div class="progress mt-3" role="progressbar" aria-label="Animated striped example" aria-valuenow="<?php echo min(100, ($totalDonation / $donationGoal) * 100); ?>" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: <?php echo min(100, ($totalDonation / $donationGoal) * 100); ?>%">
-            <?php echo round(($totalDonation / $donationGoal) * 100); ?>%
+            <?php echo $progressProcent; ?>%
         </div>
     </div>
 
@@ -143,7 +149,7 @@ $conn->close();
 
         <!-- Vælg selv -->
         <div class="mt-4 w-lg-50">
-            <input type="number" name="customAmount" maxlength="10" class="form-control" placeholder="Vælg Selv beløb" oninput="clearRadios()">
+            <input type="number" name="customAmount" maxlength="10" class="form-control" placeholder="Vælg Selv beløb" oninput="clearRadios()" step="1" min="1">
         </div>
 
         <div class="w-lg-50 mb-3">

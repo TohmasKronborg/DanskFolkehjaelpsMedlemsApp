@@ -27,10 +27,10 @@ require "settings/init.php";
 <nav class="d-none d-lg-flex justify-content-between align-items-center p-2 pe-3 ps-3">
     <img src="images/Logo.png" alt="logo" class="img-fluid" style="max-height: 75px;">
     <div class="text-center">
-        <a href="login.php" class="shadow-sm border border-4 rounded-4 border-altWhite p-2 pe-3 ps-3 m-2 text-secondary">
+        <a href="aktiviteter.php" class="shadow-sm border border-4 rounded-4 border-altWhite p-2 pe-3 ps-3 m-2 text-secondary">
             Log ind
         </a>
-        <a href="signup.php" class="shadow-sm border border-4 rounded-4 border-altWhite p-2 pe-3 ps-3 m-2 text-altWhite bg-warning">
+        <a href="bidrag.php" class="shadow-sm border border-4 rounded-4 border-altWhite p-2 pe-3 ps-3 m-2 text-altWhite bg-warning">
             Bliv medlem
         </a>
     </div>
@@ -49,7 +49,7 @@ require "settings/init.php";
     <section class="container mt-5">
         <div class="row d-flex justify-content-center gap-3">
             <div class="col-12 col-md-4 d-flex justify-content-center">
-                <a href="login.php" class="btn bg-white border border-3 border-altWhite text-secondary fs-1 fw-bolder rounded-4 shadow-sm">
+                <a href="aktiviteter.php" class="btn bg-white border border-3 border-altWhite text-secondary fs-1 fw-bolder rounded-4 shadow-sm">
                     Log ind
                 </a>
             </div>
