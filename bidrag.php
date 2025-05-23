@@ -161,7 +161,7 @@ $conn->close();
 <!-- Latest Donations -->
 <div class="d-flex flex-column align-items-center pt-5 bg-beige pb-5 mb-5 position-relative z-n1" style="margin-top: -15px;">
     <?php foreach ($latestDonations as $donation): ?>
-        <div class="bg-white shadow-sm rounded-4 d-flex donationCardW mb-3 border border-3 border-altWhite">
+        <div class="bg-white shadow-sm rounded-4 d-flex donationCardW mb-3 border border-5 border-altWhite">
             <img src="images/Logo.png" alt="TempPFP" class="img-fluid p-2" style="max-height: 100px">
             <div class="ms-3 me-3 mt-auto mb-auto">
                 <p class="instrument h2 m-0"><?php echo htmlspecialchars($donation['donorNavn']); ?></p>
