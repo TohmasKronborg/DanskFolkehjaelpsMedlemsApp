@@ -119,7 +119,7 @@ $conn->close();
 
 <!-- Donation box -->
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-    <main class="rounded-4 bg-white w-lg-50 m-auto mt-5 d-flex flex-column align-items-center p-3 position-relative z-1 shadow-sm">
+    <main class="rounded-4 bg-white w-lg-25 m-auto mt-5 d-flex flex-column align-items-center p-3 position-relative z-1 shadow-sm">
         <div class="btn-group mb-4" role="group">
             <input type="radio" class="btn-check" name="donorType" value="0" id="vbtn-radio1" autocomplete="off" checked>
             <label class="btn btn-outline-secondary" for="vbtn-radio1">Engangs Beløb</label>
@@ -148,12 +148,14 @@ $conn->close();
         </div>
 
         <!-- Vælg selv -->
-        <div class="mt-4 w-lg-50">
-            <input type="number" name="customAmount" maxlength="10" class="form-control" placeholder="Vælg Selv beløb" oninput="clearRadios()" step="1" min="1">
+        <div class="w-lg-100">
+            <label for="customAmount"></label>
+            <input id="customAmount" type="number" name="customAmount" maxlength="10" class="form-control" placeholder="Vælg Selv beløb" oninput="clearRadios()" step="1" min="1">
         </div>
 
-        <div class="w-lg-50 mb-3">
-            <input type="text" name="donorNavn" class="form-control mt-3" placeholder="Dit Navn">
+        <div class="w-lg-100 mb-3">
+            <label for="donorName"></label>
+            <input type="text" name="donorNavn" class="form-control" placeholder="Dit Navn" id="donorName">
         </div>
 
         <hr class="border border-3 border-secondary w-75 rounded-5">
