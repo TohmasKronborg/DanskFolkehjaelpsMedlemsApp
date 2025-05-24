@@ -61,7 +61,7 @@ class Particle {
 
         ctx.strokeStyle = grad;
         ctx.lineWidth = 1.5;
-        ctx.globalAlpha = 0.75;
+        ctx.globalAlpha = 1;
         ctx.lineCap = "round";
         ctx.lineJoin = "round";
 

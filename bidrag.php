@@ -97,6 +97,9 @@ $conn->close();
 <!-- Include Navbar -->
 <?php include "includes/navbar.php"; ?>
 
+<canvas id="money" class="z-n1 position-absolute">
+</canvas>
+
 <header class="w-75 w-md-50 text-center m-auto text-white mt-5">
     <h1>
         Dansk Julehjælps jule indsamling
@@ -186,6 +189,7 @@ $conn->close();
     }
 </script>
 
+<script src="js/canvasDonate.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
