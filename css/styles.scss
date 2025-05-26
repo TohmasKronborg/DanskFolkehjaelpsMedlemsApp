@@ -21,6 +21,8 @@ $custom-colors: (
 	"darkRed": #c40000,
 	"beige": #F6EEDE,
 	"blackBorder": #0000007F,
+	"lightPrimary": #5F97EC,
+	"saleGreen": #59DE5D,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -72,9 +74,12 @@ body{
 
 .profile-card {
 	max-width: 600px;
-	margin: 0 auto;
-	padding: 1rem;
 	box-sizing: border-box;
+}
+
+.cardFixer {
+	height: 200px;
+	object-fit: contain;
 }
 
 // SM breakpoint
