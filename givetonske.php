@@ -80,7 +80,7 @@ require "settings/init.php";
                 <a class="text-Morkegron" href="aktiviteter.php">FORSIDE</a>
                 <a class="text-Morkegron" href="bidrag.php">DONATIONER</a>
                 <a class="text-Morkegron" href="givetonske.php">GIV ET ØNKSE</a>
-                <a class="text-Morkegron" href="reward.php">GEVINSTER</a>
+                <a class="text-Morkegron" href="rewards.php">GEVINSTER</a>
                 <a class="text-Morkegron" href="hjaelp.php">HJÆLP</a>
                 <a class="text-Morkegron" href="info.php">INFO</a>
             </div>
@@ -102,81 +102,85 @@ require "settings/init.php";
     </div>
 </main>
 
-<!-- Under 100kr. gaver -->
-<section>
-    <p class="instrument h1 text-center">
-        under 100 DKK
-    </p>
-    <div class="d-flex justify-content-center bg-white">
-        <hr class="border border-3 border-mint w-90 rounded-5">
-    </div>
-
-    <div class="p-3 bg-beige d-flex justify-content-center align-items-center">
-        <div class="card border-altWhite border-3 shadow-sm" style="width: 18rem;">
-            <div class="text-center text-Morkegron">
-                <p class="fs-3 instrument text-Morkegron m-0">Kasper</p>
-                <p class="mb-1">Ønsker sig</p>
+<div class="container mb-5">
+    <div class="row align-items-baseline justify-content-center">
+        <!-- Under 100kr. gaver -->
+        <section class="col-12 col-md-6 col-lg-4">
+            <p class="instrument h1 text-center">
+                under 100 DKK
+            </p>
+            <div class="d-flex justify-content-center bg-white">
+                <hr class="border border-3 border-mint w-90 rounded-5">
             </div>
-            <img src="images/Blyant.png" class="card-img-top img-fluid p-4" alt="Blyant">
-            <div class="card-body text-center">
-                <h5 class="card-title">Faber-Castell Classic farveblyanter 24 stk.</h5>
-                <p class="card-text fw-light">94 DKK</p>
-                <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite">KØB</a>
+
+            <div class="p-3 bg-beige d-flex justify-content-center align-items-center">
+                <div class="card border-altWhite border-3 shadow-sm" style="width: 18rem;">
+                    <div class="text-center text-Morkegron">
+                        <p class="fs-3 instrument text-Morkegron m-0">Kasper</p>
+                        <p class="mb-1">Ønsker sig</p>
+                    </div>
+                    <img src="images/Blyant.png" class="card-img-top img-fluid p-4" alt="Blyant">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Faber-Castell Classic farveblyanter 24 stk.</h5>
+                        <p class="card-text fw-light">94 DKK</p>
+                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite">KØB</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
 
-<!-- Under 250kr. gaver -->
-<section class="mt-5">
-    <p class="instrument h1 text-center text-Morkegron">
-        under 250 DKK
-    </p>
-    <div class="d-flex justify-content-center bg-white">
-        <hr class="border border-3 border-mint w-90 rounded-5">
-    </div>
+        <!-- Under 250kr. gaver -->
+        <section class="mt-5 col-12 col-md-6 col-lg-4">
+            <p class="instrument h1 text-center text-Morkegron">
+                under 250 DKK
+            </p>
+            <div class="d-flex justify-content-center bg-white">
+                <hr class="border border-3 border-mint w-90 rounded-5">
+            </div>
 
-    <div class="p-3 bg-beige d-flex justify-content-center align-items-center">
-        <div class="card border-altWhite border-3 shadow-sm" style="width: 18rem;">
-            <div class="text-center text-Morkegron">
-                <p class="fs-3 instrument text-Morkegron m-0">Jens</p>
-                <p class="mb-1">Ønsker sig</p>
+            <div class="p-3 bg-beige d-flex justify-content-center align-items-center">
+                <div class="card border-altWhite border-3 shadow-sm" style="width: 18rem;">
+                    <div class="text-center text-Morkegron">
+                        <p class="fs-3 instrument text-Morkegron m-0">Jens</p>
+                        <p class="mb-1">Ønsker sig</p>
+                    </div>
+                    <img src="images/Lego.png" class="card-img-top img-fluid p-4" alt="Lego">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">LEGO - Obi-Wan Kenobi™ og Darth Vader™</h5>
+                        <p class="card-text fw-light">200 DKK</p>
+                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite">KØB</a>
+                    </div>
+                </div>
             </div>
-            <img src="images/Lego.png" class="card-img-top img-fluid p-4" alt="Lego">
-            <div class="card-body text-center">
-                <h5 class="card-title">LEGO - Obi-Wan Kenobi™ og Darth Vader™</h5>
-                <p class="card-text fw-light">200 DKK</p>
-                <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite">KØB</a>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Under 500kr. gaver -->
-<section class="mt-5">
-    <p class="instrument h1 text-center text-Morkegron">
-        under 500 DKK
-    </p>
-    <div class="d-flex justify-content-center bg-white">
-        <hr class="border border-3 border-mint w-90 rounded-5">
-    </div>
+        <!-- Under 500kr. gaver -->
+        <section class="mt-5 col-12 col-md-6 col-lg-4">
+            <p class="instrument h1 text-center text-Morkegron">
+                under 500 DKK
+            </p>
+            <div class="d-flex justify-content-center bg-white">
+                <hr class="border border-3 border-mint w-90 rounded-5">
+            </div>
 
-    <div class="p-3 bg-beige d-flex justify-content-center align-items-center">
-        <div class="card border-altWhite border-3 shadow-sm" style="width: 18rem;">
-            <div class="text-center text-Morkegron">
-                <p class="fs-3 instrument text-Morkegron m-0">Line</p>
-                <p class="mb-1">Ønsker sig</p>
+            <div class="p-3 bg-beige d-flex justify-content-center align-items-center">
+                <div class="card border-altWhite border-3 shadow-sm" style="max-width: 18rem;">
+                    <div class="text-center text-Morkegron">
+                        <p class="fs-3 instrument text-Morkegron m-0">Line</p>
+                        <p class="mb-1">Ønsker sig</p>
+                    </div>
+                    <img src="images/Jbl.png" class="card-img-top img-fluid p-4" alt="Jbl">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">JBL Wave Beam 2 true wireless in-ear høretelefoner (sort)</h5>
+                        <p class="card-text fw-light">399 DKK</p>
+                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite">KØB</a>
+                    </div>
+                </div>
             </div>
-            <img src="images/Jbl.png" class="card-img-top img-fluid p-4" alt="Jbl">
-            <div class="card-body text-center">
-                <h5 class="card-title">JBL Wave Beam 2 true wireless in-ear høretelefoner (sort)</h5>
-                <p class="card-text fw-light">399 DKK</p>
-                <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite">KØB</a>
-            </div>
-        </div>
+        </section>
     </div>
-</section>
+</div>
 
 <script src="js/canvasGifts.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

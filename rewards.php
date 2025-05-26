@@ -27,7 +27,7 @@ require "settings/init.php";
     <div class="row w-100 d-flex border-primary border p-3">
         <div class="col-4">
             <div class="w-100 h-100 rounded-5">
-                <img src="images/lars.png" alt="Profilbillede">
+                <img src="images/lars.png" alt="Profilbillede" class="img-fluid" style="max-height: 150px;">
             </div>
         </div>
     </div>
