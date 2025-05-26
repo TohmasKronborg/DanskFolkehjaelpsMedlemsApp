@@ -20,6 +20,7 @@ $custom-colors: (
 	"gul": #ffd300,
 	"darkRed": #c40000,
 	"beige": #F6EEDE,
+	"blackBorder": #0000007F,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -69,6 +70,13 @@ body{
 	min-height: 5px;
 }
 
+.profile-card {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+
 // SM breakpoint
 @media screen and (min-width: 576px){
  .w-sm-50{
@@ -96,5 +104,14 @@ body{
 	}
 	.w-lg-100{
 		width: 100% !important;
+	}
+}
+
+// Misc breakpoint 💀
+@media (max-width: 600px) {
+	.profile-card {
+		width: calc(100% - 2rem);
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
