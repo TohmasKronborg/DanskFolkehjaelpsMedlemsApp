@@ -26,6 +26,19 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 $box-shadow-sm: 5px 5px 5px 0px rgba($black, .025);
 
+$custom-widths: (
+				10: 10%,
+				20: 20%,
+				35: 35%,
+				90: 90%
+);
+
+@each $size, $value in $custom-widths {
+	.w-#{$size} {
+		width: $value !important;
+	}
+}
+
 @import "bootstrapComponents";
 
 // 5. Du kan lave styling her...
@@ -43,6 +56,19 @@ body{
 	backdrop-filter: blur(7.5px);
 }
 
+.bg-secondaryToWhiteGradient{
+	background: linear-gradient(180deg, #0209A0 25%, #F6EEDE 50%);
+}
+
+.donationCardW{
+	width: 33%;
+	min-width: 319px;
+}
+
+.randomLine{
+	min-height: 5px;
+}
+
 // SM breakpoint
 @media screen and (min-width: 576px){
  .w-sm-50{
@@ -54,5 +80,21 @@ body{
 @media screen and (min-width: 768px){
 	.w-md-50{
 		width: 50% !important;
+	}
+	.w-md-25{
+		width: 50% !important;
+	}
+}
+
+// Lg breakpoint
+@media screen and (min-width: 992px){
+	.w-lg-50{
+		width: 50% !important;
+	}
+	.w-lg-25{
+		width: 25% !important;
+	}
+	.w-lg-100{
+		width: 100% !important;
 	}
 }
