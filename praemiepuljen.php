@@ -21,9 +21,9 @@ require "settings/init.php";
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body class="bg">
 
-<div class="container d-flex justify-content-center flex-column"> <!-- gør dig klar til at se noget ækelt kode (som jeg helt klart kunne have lavet på en bedre måde) -->
+<div class="container d-flex justify-content-center flex-column w-75"> <!-- gør dig klar til at se noget ækelt kode (som jeg helt klart kunne have lavet på en bedre måde) -->
     <div class="row mt-3 mb-3">
         <div class="col d-flex justify-content-center">
             <p class="instrument fw-bold h1">Præmiepuljen</p>

@@ -22,34 +22,14 @@ require "settings/init.php";
 </head>
 
 <body>
-<div class="container">
-    <div class="row g-3">
-        <?php
-        $produkter = $db->sql("SELECT * FROM produkter");
-        foreach($produkter as $produkt) {
-            ?>
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-header">
-                        <?php
-                        echo $produkt->prodNavn;
-                        ?>
-                    </div>
-                    <div class="card-body">
-                        <?php
-                        // Indsæt andet felt fra database
-                        ?>
-                    </div>
-                    <div class="card-footer">
-                        <?php
-                        // Indsæt andet felt fra database
-                        ?>
-                    </div>
-                </div>
+
+<div class="container w-75 d-flex">
+    <div class="row w-100 d-flex border-primary border p-3">
+        <div class="col-4">
+            <div class="w-100 h-100 rounded-5">
+                <img src="images/lars.png" alt="Profilbillede">
             </div>
-            <?php
-        }
-        ?>
+        </div>
     </div>
 </div>
 
