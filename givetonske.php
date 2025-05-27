@@ -42,7 +42,7 @@ require "settings/init.php";
             <a class="text-white" href="givetonske.php">GIV ET ØNKSE</a>
             <a class="text-white" href="rewards.php">GEVINSTER</a>
             <a class="text-white" href="aktiviteter.php">ARRANGEMENTER</a>
-            <a class="text-white" href="hjaelp.php">HJÆLP</a>
+            <a class="text-white" href="hjaelp.php">KONTAKT</a>
             <a class="text-white" href="info.php">INFO</a>
         </div>
     </div>
@@ -81,7 +81,7 @@ require "settings/init.php";
                 <a class="text-Morkegron" href="bidrag.php">DONATIONER</a>
                 <a class="text-Morkegron" href="givetonske.php">GIV ET ØNKSE</a>
                 <a class="text-Morkegron" href="rewards.php">GEVINSTER</a>
-                <a class="text-Morkegron" href="hjaelp.php">HJÆLP</a>
+                <a class="text-Morkegron" href="hjaelp.php">KONTAKT</a>
                 <a class="text-Morkegron" href="info.php">INFO</a>
             </div>
         </div>
@@ -104,8 +104,33 @@ require "settings/init.php";
 
 <div class="container mb-5">
     <div class="row align-items-baseline justify-content-center">
+        <!-- Under 50kr. gaver -->
+        <section class="col-12 col-md-6">
+            <p class="instrument h1 text-center">
+                under 50 DKK
+            </p>
+            <div class="d-flex justify-content-center bg-white">
+                <hr class="border border-3 border-mint w-90 rounded-5">
+            </div>
+
+            <div class="p-3 bg-beige d-flex justify-content-center align-items-center">
+                <div class="card border-altWhite border-3 shadow-sm" style="width: 18rem;">
+                    <div class="text-center text-Morkegron">
+                        <p class="fs-3 instrument text-Morkegron m-0">Sofie</p>
+                        <p class="mb-1">Ønsker sig</p>
+                    </div>
+                    <img src="images/hsr301074_cmulticoloured_2.png" class="card-img-top img-fluid p-4" alt="Blyant">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Happy Summer gadekridt</h5>
+                        <p class="card-text fw-light">24 DKK</p>
+                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite kobBtn">KØB</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Under 100kr. gaver -->
-        <section class="col-12 col-md-6 col-lg-4">
+        <section class="col-12 col-md-6">
             <p class="instrument h1 text-center">
                 under 100 DKK
             </p>
@@ -123,7 +148,7 @@ require "settings/init.php";
                     <div class="card-body text-center">
                         <h5 class="card-title">Faber-Castell Classic farveblyanter 24 stk.</h5>
                         <p class="card-text fw-light">94 DKK</p>
-                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite">KØB</a>
+                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite kobBtn">KØB</a>
                     </div>
                 </div>
             </div>
@@ -131,7 +156,7 @@ require "settings/init.php";
 
 
         <!-- Under 250kr. gaver -->
-        <section class="mt-5 col-12 col-md-6 col-lg-4">
+        <section class="mt-5 col-12 col-md-6">
             <p class="instrument h1 text-center text-Morkegron">
                 under 250 DKK
             </p>
@@ -149,14 +174,14 @@ require "settings/init.php";
                     <div class="card-body text-center">
                         <h5 class="card-title">LEGO - Obi-Wan Kenobi™ og Darth Vader™</h5>
                         <p class="card-text fw-light">200 DKK</p>
-                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite">KØB</a>
+                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite kobBtn">KØB</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Under 500kr. gaver -->
-        <section class="mt-5 col-12 col-md-6 col-lg-4">
+        <section class="mt-5 col-12 col-md-6">
             <p class="instrument h1 text-center text-Morkegron">
                 under 500 DKK
             </p>
@@ -174,7 +199,7 @@ require "settings/init.php";
                     <div class="card-body text-center">
                         <h5 class="card-title">JBL Wave Beam 2 true wireless in-ear høretelefoner (sort)</h5>
                         <p class="card-text fw-light">399 DKK</p>
-                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite">KØB</a>
+                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite kobBtn">KØB</a>
                     </div>
                 </div>
             </div>
@@ -182,6 +207,17 @@ require "settings/init.php";
     </div>
 </div>
 
+
+<script>
+    const kobBtns = document.querySelectorAll(".kobBtn");
+
+    kobBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            alert("Tak for din velgørenhed")
+        });
+    });
+
+</script>
 <script src="js/canvasGifts.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
