@@ -72,7 +72,11 @@ require "settings/init.php";
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        Pengene, der samles ind af både Dansk Folkehjælp og Dansk Julehjælp, går til mennesker i nød i Danmark. De hjælper især udsatte familier, ældre, enlige forsørgere og personer med meget begrænsede økonomiske midler. Formålet er at give dem støtte til basale fornødenheder, mad, varme og juleglæde i den kolde tid.
+                        <br> <br>
+                        Dansk Julehjælp fokuserer især på at sikre, at familier med små eller ingen økonomiske ressourcer kan få en god jul — med madpakker, gaver og varme i hjemmet.
+                        <br> <br>
+                        Dansk Folkehjælp har et bredere fokus, hvor hjælpen også kan gå til sociale indsatser året rundt, som støtte til hjemløse, ensomme og andre udsatte grupper.
                     </div>
                 </div>
             </div>
