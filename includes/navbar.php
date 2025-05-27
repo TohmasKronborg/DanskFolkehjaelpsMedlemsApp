@@ -16,8 +16,8 @@
             <a class="text-white" href="bidrag.php">DONATIONER</a>
             <a class="text-white" href="givetonske.php">GIV ET ØNKSE</a>
             <a class="text-white" href="reward.php">GEVINSTER</a>
-            <a class="text-white" href="aktiviteter.php">ARRANGEMENTER</a>
-            <a class="text-white" href="hjaelp.php">HJÆLP</a>
+            <a class="text-white" href="aktiviteter.php">AKTIVITETER</a>
+            <a class="text-white" href="hjaelp.php">KONTAKT</a>
             <a class="text-white" href="info.php">INFO</a>
         </div>
     </div>
@@ -52,11 +52,12 @@
         </div>
         <div class="offcanvas-body">
             <div class="m-2 overlayHover fs-2 d-flex flex-column gap-5 text-center fw-bolder">
-                <a class="text-primary" href="aktiviteter.php">FORSIDE</a>
+                <a class="text-primary" href="index.php">FORSIDE</a>
                 <a class="text-primary" href="bidrag.php">DONATIONER</a>
                 <a class="text-primary" href="givetonske.php">GIV ET ØNKSE</a>
                 <a class="text-primary" href="rewards.php">GEVINSTER</a>
-                <a class="text-primary" href="hjaelp.php">HJÆLP</a>
+                <a class="text-primary" href="aktiviteter.php">AKTIVITETER</a>
+                <a class="text-primary" href="hjaelp.php">KONTAKT</a>
                 <a class="text-primary" href="info.php">INFO</a>
             </div>
         </div>
