@@ -39,11 +39,29 @@ require "settings/init.php";
     </div>
 </div>
 
+<div class="container mb-5 mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col d-flex justify-content-center">
+            <p class="instrument fw-bolder h3">Hvordan tilmelder man sig?</p>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-6 d-flex justify-content-center">
+            <ul class="list-group w-100">
+                <li class="list-group-item">1. Tryk på knappen "Tilmeld"</li>
+                <li class="list-group-item">2. Udfyld tilmeldings-formularen</li>
+                <li class="list-group-item">3. Få tilsendt en invitation i din email</li>
+                <li class="list-group-item">4. Ankom til eventet!</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 <div class="container">
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
             <div class="card">
-                <img src="images/juleby.png" class="card-img-top" alt="Julemarked">
+                <img src="images/juleby.png" class="card-img-top cardFixer" alt="Julemarked">
                 <div class="card-body">
                     <h5 class="card-title">Julemarked</h5>
                     <p class="card-text">Kom og kig ind til vores loppemarked i Torebyhallen! Der vil være forskellige boder med julegodter, f.eks. gløgg, æbleskiver, klegner, osv.</p>
@@ -58,7 +76,7 @@ require "settings/init.php";
         </div>
         <div class="col">
             <div class="card">
-                <img src="images/hike.png" class="card-img-top" alt="Nisse March">
+                <img src="images/hike.png" class="card-img-top cardFixer" alt="Nisse March">
                 <div class="card-body">
                     <h5 class="card-title">Nisse March</h5>
                     <p class="card-text">Tag familien med, og tag ud på en tur i sneen sammen. Der vil være gratis kakao og æbleskiver, samt en skattejagt lidt senere... 👀</p>
@@ -73,19 +91,16 @@ require "settings/init.php";
         </div>
         <div class="col">
             <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="images/christmasconcert.png" class="card-img-top cardFixer" alt="Julekoncerten">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title">Julekoncerten</h5>
+                    <p class="card-text">Kom til Musikskolen og syng med på nogle klassiske julesange! Musikskolens eget kor og bands optræder, og spreder juleglæde.</p>
+                    <p class="card-text text-black-50 fst-italic">17/12/2025 • Skolegade 3C, 4800 Nykøbing Falster</p>
+                    <a href="#" class="text-warning text-decoration-underline fw-bold h4">Mere info</a>
+                    <hr>
+                    <button type="button" class="btn btn-warning fw-semibold text-white w-100">
+                        <span class="h5">Tilmeld</span>
+                    </button>
                 </div>
             </div>
         </div>
