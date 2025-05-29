@@ -46,12 +46,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $donorNavn !== null && $donorType !
     $stmt->bind_param("sii", $donorNavn, $donorAmount, $donorType);
 
     if ($stmt->execute()) {
-        header("Location: " . $_SERVER['PHP_SELF']);
+        header("Location: thankYou.php");
         exit();
     } else {
         $responseMessage = "<div class='mt-3 alert alert-danger text-center w-100'>Noget gik galt: " . $stmt->error . "</div>";
     }
-
     $stmt->close();
 }
 
@@ -100,7 +99,7 @@ $conn->close();
     </script>
 </head>
 
-<body class="bg-secondaryToWhiteGradient">
+<body class="bg-secondaryToWhiteGradient overflow-x-hidden">
 
 <!-- Include Navbar -->
 <?php include "includes/navbar.php"; ?>
