@@ -28,39 +28,41 @@ require "settings/init.php";
 include("includes/navbar.php");
 ?>
 
-<header class="pictureBg text-white bg-black ps-lg-auto pe-lg-auto p-3 mb-4">
-    <p class="h1" style="font-size: 75px;">Lad os rede julen sammen</p>
+<header class="pictureBg text-white bg-black ps-lg-auto pe-lg-auto p-3 mb-4 pt-lg-5 pb-lg-5">
+    <p class="h1" style="font-size: 65px;">Lad os rede julen sammen</p>
     <p>Har de brug for hjælp eller har de et spørgsmål de gerne vil stille? Så står vi klar til at hjælpe</p>
 </header>
 
 <h1 class="text-center text-secondary fw-bold">Kontakt os</h1>
 
 <!-- Form beginning -->
-<section class="p-3 text-primary">
-    <div class="mb-3">
-        <label for="name" class="form-label">Navn</label>
-        <input type="text" class="form-control" id="name" placeholder="Dit fornavn">
-    </div>
-    <div class="mb-3">
-        <label for="lastName" class="form-label">Efternavn</label>
-        <input type="text" class="form-control" id="lastName" placeholder="Dit Efternavn">
-    </div>
-    <div class="mb-3">
-        <label for="tel" class="form-label">Telefon nummer</label>
-        <input type="tel" class="form-control" id="tel" placeholder="+45 12 34 56 78">
-    </div>
-    <div class="mb-3">
-        <label for="emailAdress" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="emailAdress" placeholder="name@example.com">
-    </div>
-    <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
+<section class="p-3 text-primary d-flex flex-column align-items-center">
+    <div class="w-md-50"> <!-- div for centering -->
+        <div class="mb-3">
+            <label for="name" class="form-label">Navn</label>
+            <input type="text" class="form-control" id="name" placeholder="Dit fornavn">
+        </div>
+        <div class="mb-3">
+            <label for="lastName" class="form-label">Efternavn</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Dit Efternavn">
+        </div>
+        <div class="mb-3">
+            <label for="tel" class="form-label">Telefon nummer</label>
+            <input type="tel" class="form-control" id="tel" placeholder="+45 12 34 56 78">
+        </div>
+        <div class="mb-3">
+            <label for="emailAdress" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="emailAdress" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
 
-    <button class="btn btn-warning border-altWhite border-3 text-white fs-1 rounded-4   ">
-        send
-    </button>
+        <button class="btn btn-warning border-altWhite border-3 text-white fs-1 rounded-4   ">
+            send
+        </button>
+    </div>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
