@@ -5,22 +5,13 @@
 
 require "settings/init.php";
 
-// Connect to database
-$host = 'mysql12.unoeuro.com';
-$user = 'slamsluger_dk';
-$pass = '4gadH6BtpmR3DywEGh2b';
-$db = 'slamsluger_dk_db';
+$sql = "SELECT donorNavn, donorAmount FROM donations ORDER BY donorId DESC LIMIT 1";
+$latestdonation = $db->sql($sql); // Returns an array of stdClass objects
 
-$conn = new mysqli($host, $user, $pass, $db);
+$donorNavn = $latestdonation[0]->donorNavn;
+$donorAmount = $latestdonation[0]->donorAmount;
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-$stmt = $conn->query("SELECT donorNavn, donorAmount FROM donations ORDER BY donorId DESC LIMIT 1");
-$row = $stmt->fetch_assoc();
 
-$donorNavn = $row['donorNavn'];
-$donorAmount = $row['donorAmount'];
 ?>
 <!DOCTYPE html>
 <html lang="da">
