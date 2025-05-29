@@ -4,6 +4,23 @@
  */
 
 require "settings/init.php";
+
+// Connect to database
+$host = 'mysql12.unoeuro.com';
+$user = 'slamsluger_dk';
+$pass = '4gadH6BtpmR3DywEGh2b';
+$db = 'slamsluger_dk_db';
+
+$conn = new mysqli($host, $user, $pass, $db);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+$stmt = $conn->query("SELECT donorNavn, donorAmount FROM donations ORDER BY donorId DESC LIMIT 1");
+$row = $stmt->fetch_assoc();
+
+$donorNavn = $row['donorNavn'];
+$donorAmount = $row['donorAmount'];
 ?>
 <!DOCTYPE html>
 <html lang="da">
@@ -29,7 +46,10 @@ require "settings/init.php";
 
 <p class="text-white" style="margin-bottom: 50px;">&#0020;</p>
 <div class="w-75 w-md-50 text-center m-auto mt-auto mb-5 text-black transparentIntro p-2 text-center">
-    <p class="fw-bolder" style="font-size: 75px;">Tak for din donation</p>
+    <p class="fw-bolder" style="font-size: 75px;">
+        Tak for din donation
+    </p>
+    <p class="fs-3">Tak <strong><?php echo $donorNavn ?></strong> for dine <strong><?php echo $donorAmount ?></strong> DKK</p>
 </div>
 
 <div class="text-center">
