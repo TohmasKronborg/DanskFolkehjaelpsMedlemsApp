@@ -19,12 +19,19 @@ require "settings/init.php";
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "rqa4chuyoz");
+    </script>
 </head>
 
 <body>
 
 <?php
-    include("includes/navbar.php");
+include("includes/navbar.php");
 ?>
 
 <div class="d-flex flex-column align-items-center mb-5">
@@ -60,7 +67,7 @@ require "settings/init.php";
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        Det kan du gøre her på appen. Men hver opmærksom på, at her skifter hvilken del af Dansk Folkehjælp du donerer til. Skifter i overens med årstiderne eller anden relevant dato. Hvis du vil donere til specifkt til enten: skolestarthjælp, feriehjælp, konfirmatinoshjælp eller julehjælp. Skal det gøre på Dansk folkehjælps egen hjemmeside.
                     </div>
                 </div>
             </div>
@@ -88,7 +95,7 @@ require "settings/init.php";
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        Det kan du blive, på enten Dansk Folkehjælps egen hjemmeside.
                     </div>
                 </div>
             </div>

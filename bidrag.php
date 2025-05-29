@@ -7,10 +7,10 @@ require "settings/init.php";
 
 
 // Connect to database
-$host = 'mariadb';
-$user = 'user';
-$pass = 'password';
-$db = 'dkfma';
+$host = 'mysql12.unoeuro.com';
+$user = 'slamsluger_dk';
+$pass = '4gadH6BtpmR3DywEGh2b';
+$db = 'slamsluger_dk_db';
 
 $conn = new mysqli($host, $user, $pass, $db);
 
@@ -81,7 +81,7 @@ $conn->close();
 <head>
     <meta charset="utf-8">
 
-    <title>Giv et bidrag</title>
+    <title>DKF's Medlems App | Giv et bidrag</title>
 
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
@@ -90,6 +90,13 @@ $conn->close();
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "rqa4chuyoz");
+    </script>
 </head>
 
 <body class="bg-secondaryToWhiteGradient">
@@ -100,7 +107,7 @@ $conn->close();
 <canvas id="money" class="z-n1 position-absolute">
 </canvas>
 
-<header class="w-75 w-md-50 text-center m-auto text-white mt-5">
+<header class="w-75 w-md-50 text-center m-auto text-white mt-5 transparentIntro p-2">
     <h1>
         Dansk Julehjælps jule indsamling
     </h1>

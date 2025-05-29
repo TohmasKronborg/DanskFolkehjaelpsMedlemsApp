@@ -10,7 +10,7 @@ require "settings/init.php";
 <head>
     <meta charset="utf-8">
 
-    <title>Giv et ønske</title>
+    <title>DKF's Medlems App | Giv et ønske</title>
 
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
@@ -19,6 +19,13 @@ require "settings/init.php";
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "rqa4chuyoz");
+    </script>
 </head>
 
 <!-- Denne underside er grøn, for at vise webappens design ude fra helidags peridoer. -->
@@ -41,6 +48,7 @@ require "settings/init.php";
             <a class="text-white" href="bidrag.php">DONATIONER</a>
             <a class="text-white" href="givetonske.php">GIV ET ØNKSE</a>
             <a class="text-white" href="rewards.php">GEVINSTER</a>
+            <a class="text-white" href="praemiepuljen.php">PRÆMIEPULJE</a>
             <a class="text-white" href="aktiviteter.php">ARRANGEMENTER</a>
             <a class="text-white" href="hjaelp.php">KONTAKT</a>
             <a class="text-white" href="info.php">INFO</a>
@@ -81,6 +89,7 @@ require "settings/init.php";
                 <a class="text-Morkegron" href="bidrag.php">DONATIONER</a>
                 <a class="text-Morkegron" href="givetonske.php">GIV ET ØNKSE</a>
                 <a class="text-Morkegron" href="rewards.php">GEVINSTER</a>
+                <a class="text-Morkegron" href="praemiepuljen.php">PRÆMIEPULJE</a>
                 <a class="text-Morkegron" href="hjaelp.php">KONTAKT</a>
                 <a class="text-Morkegron" href="info.php">INFO</a>
             </div>
@@ -93,7 +102,7 @@ require "settings/init.php";
 </canvas>
 
 <main id="giftsMain" class="p-3 d-flex flex-column align-items-center mt-5 mb-5">
-<!--    <img src="images/GenkendeligtLogoGron.png" alt="logo" class="img-fluid" style="max-height: 150px;">-->
+    <!--    <img src="images/GenkendeligtLogoGron.png" alt="logo" class="img-fluid" style="max-height: 150px;">-->
     <div class="transparentIntro w-lg-50 text-center mt-3">
         <p class="instrument fs-1 text-Morkegron">Giv et ønske og skab glæde</p>
         <p class="fs-5">

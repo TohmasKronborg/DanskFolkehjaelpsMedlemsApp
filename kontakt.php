@@ -10,7 +10,7 @@ require "settings/init.php";
 <head>
     <meta charset="utf-8">
 
-    <title>Kontakt</title>
+    <title>DKF's Medlems App | Kontakt</title>
 
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
