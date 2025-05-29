@@ -28,17 +28,25 @@ require "settings/init.php";
         })(window, document, "clarity", "script", "rqa4chuyoz");
     </script>
 </head>
+<style>
+    .simpleHover {
+        transition: transform 0.3s ease-in-out;
+    }
 
+    .simpleHover:hover {
+        transform: translateY(-5px);
+    }
+</style>
 <body class="overflow-x-hidden">
 
 <!-- Desktop Nav -->
 <nav class="d-none d-lg-flex justify-content-between align-items-center p-2 pe-3 ps-3">
     <img src="images/Logo.png" alt="logo" class="img-fluid" style="max-height: 75px;">
     <div class="text-center">
-        <a href="aktiviteter.php" class="shadow-sm border border-4 rounded-4 border-altWhite p-2 pe-3 ps-3 m-2 text-secondary">
+        <a href="aktiviteter.php" class="shadow-sm border border-4 rounded-4 border-altWhite p-2 pe-3 ps-3 m-2 text-secondary simpleHover">
             Log ind
         </a>
-        <a href="bidrag.php" class="shadow-sm border border-4 rounded-4 border-altWhite p-2 pe-3 ps-3 m-2 text-altWhite bg-warning">
+        <a href="bidrag.php" class="shadow-sm border border-4 rounded-4 border-altWhite p-2 pe-3 ps-3 m-2 text-altWhite bg-warning simpleHover">
             Bliv medlem
         </a>
     </div>
@@ -47,7 +55,7 @@ require "settings/init.php";
 <canvas id="flakes" class="z-n1 position-absolute">
 </canvas>
 
-<main id="flakesMain" class="pb-5 p-3 d-flex flex-column align-items-center mt-5 mb-5">
+<main id="flakesMain" class="pb-5 p-3 d-flex flex-column align-items-center mt-lg-5 mb-5">
     <img src="images/Logo.png" alt="logo" class="img-fluid" style="max-height: 325px;">
     <p class="text-center z-1 p-2 pe-3 ps-3 fs-2 transparentIntro fw-bolder mt-3">
         Som medlem, har du mulighed for at gøre en forskel for vores udsatte medborgere.
@@ -57,12 +65,12 @@ require "settings/init.php";
     <section class="container mt-5">
         <div class="row d-flex justify-content-center gap-3">
             <div class="col-12 col-md-4 d-flex justify-content-center">
-                <a href="aktiviteter.php" class="btn bg-white border border-3 border-altWhite text-secondary fs-1 fw-bolder rounded-4 shadow-sm">
+                <a href="aktiviteter.php" class="btn bg-white border border-3 border-altWhite text-secondary fs-1 fw-bolder rounded-4 shadow-sm simpleHover">
                     Log ind
                 </a>
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-center">
-                <a href="bidrag.php" class="btn bg-warning border border-3 border-altWhite text-altWhite fs-1 fw-bolder text-nowrap rounded-4 shadow-sm">
+                <a href="bidrag.php" class="btn bg-warning border border-3 border-altWhite text-altWhite fs-1 fw-bolder text-nowrap rounded-4 shadow-sm simpleHover">
                     Giv et bidrag
                 </a>
             </div>
@@ -71,7 +79,7 @@ require "settings/init.php";
 </main>
 
 <article class="bg-secondary p-3 pb-5 pt-5 fs-2 mb-0 d-flex justify-content-center">
-    <p class="text-center text-mint instrument w-50">
+    <p class="text-center text-mint instrument w-lg-50">
         Som medlem af Dansk Folkehjælp gør du en forskel for mennesker i nød – du støtter frivillige indsatser som julehjælp, social støtte og nødhjælp både i Danmark og ude i verden, og er med til at skabe håb, fællesskab og tryghed dér, hvor livet gør ondt.
     </p>
 </article>
@@ -85,17 +93,17 @@ require "settings/init.php";
     <div class="container-fluid">
         <div class="row d-flex justify-content-center">
             <!-- Puk & Pia -->
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-5 d-md-flex d-lg-block flex-column justify-content-center">
                 <p class="instrument text-secondary text-center fs-2">
                     Mød også Puk og Pia
                 </p>
-                <video controls src="https://www.folkehjaelp.dk/cvm/wp-content/uploads/2023/12/blivfrivillig_1.mp4" style="max-width: 100%;"></video>
-                <video controls src="https://www.folkehjaelp.dk/cvm/wp-content/uploads/2023/12/blivfrivillig_2.mp4" style="max-width: 100%;"></video>
+                <video class="img-fluid mb-3" controls src="https://www.folkehjaelp.dk/cvm/wp-content/uploads/2023/12/blivfrivillig_1.mp4" style="max-height: 300px;"></video>
+                <video class="img-fluid mb-3 mb-lg-0" controls src="https://www.folkehjaelp.dk/cvm/wp-content/uploads/2023/12/blivfrivillig_2.mp4" style="max-height: 300px;"></video>
             </div>
 
             <!-- Ul list -->
             <!-- Fjern ordered list og lav det til ikoner i stedet for -->
-            <div class="col-12 col-lg-6 pe-5 ps-5 d-flex flex-column justify-content-center">
+            <div class="col-12 col-lg-6 pe-md-5 ps-md-5 d-flex flex-column justify-content-center">
                 <h2 class="text-secondary text-center instrument">Som Medlem er du med til ...</h2>
                 <ul class="fs-4">
                     <li>

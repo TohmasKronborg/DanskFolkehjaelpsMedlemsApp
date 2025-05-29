@@ -1,3 +1,13 @@
+<style>
+    .simpleHover {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .simpleHover:hover {
+        transform: translateY(-5px);
+    }
+</style>
+
 <!-- Nav for mobile sizes -->
 <nav class="p-2 d-lg-none sticky-top z-2 bg-secondary">
     <div class="d-flex justify-content-between">
@@ -11,7 +21,7 @@
 
     <!-- Hamburger menu overlay -->
     <div id="navOverlay" class="w-100 h-100 bg-secondary align-items-center justify-content-center position-fixed top-0 start-0" style="display: none; z-index: 1">
-        <div class="m-2 overlayHover fs-1 d-flex flex-column gap-5 text-center fw-bolder">
+        <div class="m-2 overlayHover fs-1 d-flex flex-column gap-3 text-center fw-bolder">
             <a class="text-white" href="index.php">FORSIDE</a>
             <a class="text-white" href="bidrag.php">DONATIONER</a>
             <a class="text-white" href="givetonske.php">GIV ET ØNKSE</a>
@@ -53,13 +63,13 @@
         </div>
         <div class="offcanvas-body">
             <div class="m-2 overlayHover fs-2 d-flex flex-column gap-5 text-center fw-bolder">
-                <a class="text-primary" href="index.php">FORSIDE</a>
-                <a class="text-primary" href="bidrag.php">DONATIONER</a>
-                <a class="text-primary" href="givetonske.php">GIV ET ØNKSE</a>
-                <a class="text-primary" href="rewards.php">GEVINSTER</a>
-                <a class="text-primary" href="aktiviteter.php">AKTIVITETER</a>
-                <a class="text-primary" href="kontakt.php">KONTAKT</a>
-                <a class="text-primary" href="info.php">INFO</a>
+                <a class="text-primary simpleHover" href="index.php">FORSIDE</a>
+                <a class="text-primary simpleHover" href="bidrag.php">DONATIONER</a>
+                <a class="text-primary simpleHover" href="givetonske.php">GIV ET ØNKSE</a>
+                <a class="text-primary simpleHover" href="rewards.php">GEVINSTER</a>
+                <a class="text-primary simpleHover" href="aktiviteter.php">AKTIVITETER</a>
+                <a class="text-primary simpleHover" href="kontakt.php">KONTAKT</a>
+                <a class="text-primary simpleHover" href="info.php">INFO</a>
             </div>
         </div>
     </div>

@@ -83,7 +83,15 @@ $latestDonations = $db->sql($latestDonationResult);
         })(window, document, "clarity", "script", "rqa4chuyoz");
     </script>
 </head>
+<style>
+    .simpleHover {
+        transition: transform 0.3s ease-in-out;
+    }
 
+    .simpleHover:hover {
+        transform: translateY(-5px);
+    }
+</style>
 <body class="bg-secondaryToWhiteGradient overflow-x-hidden">
 
 <!-- Include Navbar -->
@@ -126,20 +134,28 @@ $latestDonations = $db->sql($latestDonationResult);
         <hr class="border border-3 border-secondary w-75 rounded-5">
         <span class="h1">Vælg et beløb</span>
 
-        <div class="mt-4">
-            <input type="radio" class="btn-check" name="data[donorAmount]" value="10" id="option5" autocomplete="off">
-            <label class="btn btn-outline-secondary fs-2" for="option5">10 DKK</label>
+        <div class="mt-4 d-flex gap-2">
+            <div class="simpleHover">
+                <input type="radio" class="btn-check" name="data[donorAmount]" value="10" id="option5" autocomplete="off">
+                <label class="btn btn-outline-secondary fs-2" for="option5">10 DKK</label>
+            </div>
 
-            <input type="radio" class="btn-check" name="data[donorAmount]" value="20" id="option6" autocomplete="off">
-            <label class="btn btn-outline-secondary fs-2" for="option6">20 DKK</label>
+            <div class="simpleHover">
+                <input type="radio" class="btn-check" name="data[donorAmount]" value="20" id="option6" autocomplete="off">
+                <label class="btn btn-outline-secondary fs-2" for="option6">20 DKK</label>
+            </div>
         </div>
 
-        <div class="mt-4">
-            <input type="radio" class="btn-check" name="data[donorAmount]" value="50" id="option7" autocomplete="off">
-            <label class="btn btn-outline-secondary fs-2" for="option7">50 DKK</label>
+        <div class="mt-4 d-flex gap-2">
+            <div class="simpleHover">
+                <input type="radio" class="btn-check" name="data[donorAmount]" value="50" id="option7" autocomplete="off">
+                <label class="btn btn-outline-secondary fs-2" for="option7">50 DKK</label>
+            </div>
 
-            <input type="radio" class="btn-check" name="data[donorAmount]" value="100" id="option8" autocomplete="off">
-            <label class="btn btn-outline-secondary fs-2" for="option8">100 DKK</label>
+            <div class="simpleHover">
+                <input type="radio" class="btn-check" name="data[donorAmount]" value="100" id="option8" autocomplete="off">
+                <label class="btn btn-outline-secondary fs-2" for="option8">100 DKK</label>
+            </div>
         </div>
 
         <!-- Vælg selv -->

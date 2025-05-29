@@ -29,7 +29,15 @@ $donorAmount = $latestdonation[0]->donorAmount;
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="images/Logo.png">
 </head>
+<style>
+    .simpleHover {
+        transition: transform 0.3s ease-in-out;
+    }
 
+    .simpleHover:hover {
+        transform: translateY(-5px);
+    }
+</style>
 <body>
 
 <canvas id="stars" class="z-n1 position-absolute">
@@ -43,8 +51,8 @@ $donorAmount = $latestdonation[0]->donorAmount;
     <p class="fs-3">Tak <strong><?php echo $donorNavn ?></strong> for dine <strong><?php echo $donorAmount ?></strong> DKK</p>
 </div>
 
-<div class="text-center">
-    <a href="bidrag.php" class="text-altWhite border border-altWhite border-5 bg-warning p-2 rounded-4 fs-1">Tag tilbage</a>
+<div class="text-center simpleHover">
+    <a href="bidrag.php" class="link-altWhite border border-altWhite border-5 bg-warning p-2 rounded-4 fs-1">GÅ TILBAGE</a>
 </div>
 
 <script>

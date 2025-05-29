@@ -28,7 +28,16 @@ require "settings/init.php";
         })(window, document, "clarity", "script", "rqa4chuyoz");
     </script>
 </head>
+<!-- Sass vil ikke compile -->
+<style>
+    .simpleHover {
+        transition: transform 0.3s ease-in-out;
+    }
 
+    .simpleHover:hover {
+        transform: translateY(-5px);
+    }
+</style>
 <!-- Denne underside er grøn, for at vise webappens design ude fra helidags peridoer. -->
 <body>
 <!-- Nav for mobile sizes -->
@@ -51,7 +60,7 @@ require "settings/init.php";
             <a class="text-white" href="rewards.php">GEVINSTER</a>
             <a class="text-white" href="praemiepuljen.php">PRÆMIEPULJE</a>
             <a class="text-white" href="aktiviteter.php">ARRANGEMENTER</a>
-            <a class="text-white" href="hjaelp.php">KONTAKT</a>
+            <a class="text-white" href="kontakt.php">KONTAKT</a>
             <a class="text-white" href="info.php">INFO</a>
         </div>
     </div>
@@ -86,13 +95,13 @@ require "settings/init.php";
         </div>
         <div class="offcanvas-body">
             <div class="m-2 overlayHover fs-2 d-flex flex-column gap-5 text-center fw-bolder">
-                <a class="text-Morkegron" href="aktiviteter.php">FORSIDE</a>
-                <a class="text-Morkegron" href="bidrag.php">DONATIONER</a>
-                <a class="text-Morkegron" href="givetonske.php">GIV ET ØNKSE</a>
-                <a class="text-Morkegron" href="rewards.php">GEVINSTER</a>
-                <a class="text-Morkegron" href="praemiepuljen.php">PRÆMIEPULJE</a>
-                <a class="text-Morkegron" href="hjaelp.php">KONTAKT</a>
-                <a class="text-Morkegron" href="info.php">INFO</a>
+                <a class="text-Morkegron simpleHover" href="aktiviteter.php">FORSIDE</a>
+                <a class="text-Morkegron simpleHover" href="bidrag.php">DONATIONER</a>
+                <a class="text-Morkegron simpleHover" href="givetonske.php">GIV ET ØNKSE</a>
+                <a class="text-Morkegron simpleHover" href="rewards.php">GEVINSTER</a>
+                <a class="text-Morkegron simpleHover" href="praemiepuljen.php">PRÆMIEPULJE</a>
+                <a class="text-Morkegron simpleHover" href="kontakt.php">KONTAKT</a>
+                <a class="text-Morkegron simpleHover" href="info.php">INFO</a>
             </div>
         </div>
     </div>
@@ -133,7 +142,7 @@ require "settings/init.php";
                     <div class="card-body text-center">
                         <h5 class="card-title">Happy Summer gadekridt</h5>
                         <p class="card-text fw-light">24 DKK</p>
-                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite kobBtn">KØB</a>
+                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite kobBtn simpleHover">KØB</a>
                     </div>
                 </div>
             </div>
@@ -158,7 +167,7 @@ require "settings/init.php";
                     <div class="card-body text-center">
                         <h5 class="card-title">Faber-Castell Classic farveblyanter 24 stk.</h5>
                         <p class="card-text fw-light">94 DKK</p>
-                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite kobBtn">KØB</a>
+                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite kobBtn simpleHover">KØB</a>
                     </div>
                 </div>
             </div>
@@ -168,7 +177,7 @@ require "settings/init.php";
         <!-- Under 250kr. gaver -->
         <section class="mt-5 col-12 col-md-6">
             <p class="instrument h1 text-center text-Morkegron">
-                under 250 DKK
+                under 200 DKK
             </p>
             <div class="d-flex justify-content-center bg-white">
                 <hr class="border border-3 border-mint w-90 rounded-5">
@@ -184,7 +193,7 @@ require "settings/init.php";
                     <div class="card-body text-center">
                         <h5 class="card-title">LEGO - Obi-Wan Kenobi™ og Darth Vader™</h5>
                         <p class="card-text fw-light">200 DKK</p>
-                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite kobBtn">KØB</a>
+                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite kobBtn simpleHover">KØB</a>
                     </div>
                 </div>
             </div>
@@ -193,7 +202,7 @@ require "settings/init.php";
         <!-- Under 500kr. gaver -->
         <section class="mt-5 col-12 col-md-6">
             <p class="instrument h1 text-center text-Morkegron">
-                under 500 DKK
+                under 400 DKK
             </p>
             <div class="d-flex justify-content-center bg-white">
                 <hr class="border border-3 border-mint w-90 rounded-5">
@@ -209,7 +218,7 @@ require "settings/init.php";
                     <div class="card-body text-center">
                         <h5 class="card-title">JBL Wave Beam 2 true wireless in-ear høretelefoner (sort)</h5>
                         <p class="card-text fw-light">399 DKK</p>
-                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite kobBtn">KØB</a>
+                        <a href="#" class="btn btn-warning text-altWhite w-100 border border-3 border-altWhite kobBtn simpleHover">KØB</a>
                     </div>
                 </div>
             </div>
