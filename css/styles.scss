@@ -82,6 +82,13 @@ body{
 	object-fit: contain;
 }
 
+.pictureBg{
+	background-image: url("../images/christmasPhoto.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 // SM breakpoint
 @media screen and (min-width: 576px){
  .w-sm-50{
