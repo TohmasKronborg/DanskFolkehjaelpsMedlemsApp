@@ -83,7 +83,7 @@ $latestDonations = $db->sql($latestDonationResult);
         })(window, document, "clarity", "script", "rqa4chuyoz");
     </script>
 </head>
-<style>
+<style> /* Sass vil ikke compile */
     .simpleHover {
         transition: transform 0.3s ease-in-out;
     }
