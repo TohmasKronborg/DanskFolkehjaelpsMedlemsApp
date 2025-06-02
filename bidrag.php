@@ -56,7 +56,7 @@ if (!empty($totalResult) && isset($totalResult[0]->total)) {
 $progressProcent = ($donationGoal > 0) ? round(($totalDonation / $donationGoal) * 100) : 0;
 
 // Fetch latest donations
-$latestDonationResult = "SELECT donorNavn, donorAmount FROM donations ORDER BY donorId DESC LIMIT 5";
+$latestDonationResult = "SELECT donorNavn, donorAmount, donorType FROM donations ORDER BY donorId DESC LIMIT 5";
 $latestDonations = $db->sql($latestDonationResult);
 
 ?>
@@ -181,8 +181,12 @@ $latestDonations = $db->sql($latestDonationResult);
         <div class="bg-white shadow-sm rounded-4 d-flex donationCardW mb-3 border border-5 border-altWhite">
             <img src="images/Logo.png" alt="TempPFP" class="img-fluid p-2" style="max-height: 100px">
             <div class="ms-3 me-3 mt-auto mb-auto">
-                <p class="instrument h2 m-0"><?php echo $donation -> donorNavn; ?></p>
-                <p class="m-0">Har doneret <strong><?php echo $donation -> donorAmount; ?></strong> DKK</p>
+                <p class="instrument h2 m-0"><?php echo $donation->donorNavn; ?></p>
+                <?php if (!empty($donation->donorType) && $donation->donorType == 1): ?>
+                    <p class="m-0">Donere nu <strong><?php echo number_format($donation->donorAmount, 0, ',', '.'); ?></strong> DKK om måneden</p>
+                <?php else: ?>
+                    <p class="m-0">Har doneret <strong><?php echo number_format($donation->donorAmount, 0, ',', '.'); ?></strong> DKK</p>
+                <?php endif; ?>
             </div>
         </div>
     <?php endforeach; ?>

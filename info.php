@@ -115,7 +115,8 @@ require "settings/init.php";
             Hjælpen består af 800 kr. til julemad og 500 kr. pr. barn til gaver (op til 2.800 kr. pr. familie).
             Formålet er at sikre, at børn ikke udelukkes fra julens fællesskab og dens fantastiske traditioner på grund af
             økonomiske udfordringer.</h5>
-        <p><a href="https://www.folkehjaelp.dk/julehjaelp/" class="px-4 fs-5 link-primary text-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">- Til Dansk Julehjælp for mere info</a></p>
+        <p><a target="_blank" href="https://www.folkehjaelp.dk/julehjaelp/" class="px-4 fs-5 link-primary text-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">- Til Dansk Julehjælp for mere info</a></p>
+        <!-- targe="_blank" gør at linket bliver åbnet på en side -->
     </div>
 
     <div>
