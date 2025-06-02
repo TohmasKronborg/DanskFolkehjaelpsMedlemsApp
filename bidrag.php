@@ -183,9 +183,9 @@ $latestDonations = $db->sql($latestDonationResult);
             <div class="ms-3 me-3 mt-auto mb-auto">
                 <p class="instrument h2 m-0"><?php echo $donation->donorNavn; ?></p>
                 <?php if (!empty($donation->donorType) && $donation->donorType == 1): ?>
-                    <p class="m-0">Donere nu <strong><?php echo $donation->donorAmount; ?></strong> DKK om måneden</p>
+                    <p class="m-0">Donere nu <strong><?php echo number_format($donation->donorAmount, 0, ',', '.'); ?></strong> DKK om måneden</p>
                 <?php else: ?>
-                    <p class="m-0">Har doneret <strong><?php echo $donation->donorAmount; ?></strong> DKK</p>
+                    <p class="m-0">Har doneret <strong><?php echo number_format($donation->donorAmount, 0, ',', '.'); ?></strong> DKK</p>
                 <?php endif; ?>
             </div>
         </div>
