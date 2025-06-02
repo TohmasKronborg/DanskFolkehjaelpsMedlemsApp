@@ -141,7 +141,7 @@ require "settings/init.php";
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="rewardModalLabel">Modal title</h1>
+                <h1 class="modal-title fs-5" id="rewardModalLabel">Rewards</h1>
             </div>
             <div class="modal-body">
                 Reward indløst!
